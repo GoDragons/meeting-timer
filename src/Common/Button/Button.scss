@@ -1,0 +1,74 @@
+@import "../../variables";
+
+button {
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-weight: 700;
+  font-family: Poppins, Arial;
+
+  margin-top: 20px;
+  display: block;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 400ms;
+  transform: scale(1);
+  user-select: none;
+  outline: unset;
+
+  @keyframes scale {
+    from {
+      transform: scale(0);
+    }
+
+    to {
+      transform: scale(1);
+    }
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+
+  &.inline {
+    margin-top: 0;
+    display: inline-block;
+  }
+
+  &.primary {
+    border: 2px solid $color3;
+    background-color: $color3;
+    color: $white;
+    position: relative;
+  }
+
+  &.secondary {
+    background-color: $color2;
+    border: 2px solid $color2;
+    color: $white;
+  }
+
+  &.linkedin {
+    font-family: Poppins, Arial;
+    font-weight: 600;
+    background-color: #0e76a8;
+    border-color: #0e76a8;
+    color: $white;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    padding: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  &.disabled {
+    background-color: $gray;
+    border: 1px solid $gray;
+    color: $color1;
+    pointer-events: none;
+  }
+}

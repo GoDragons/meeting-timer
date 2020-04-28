@@ -1,0 +1,41 @@
+@import "./variables";
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  form {
+    width: 100vw;
+    max-width: 300px;
+    background-color: $gray;
+    padding: 2rem;
+    text-align: center;
+
+    .meeting-runtime {
+      margin-top: 0;
+    }
+
+    .input-list {
+      .input-group {
+        margin-bottom: 1rem;
+
+        label {
+          color: $color3;
+        }
+        input {
+          text-align: center;
+          border: 1px solid #ddd;
+          padding: 0.2rem 1rem;
+          display: block;
+          margin: 0.3rem auto 0;
+        }
+      }
+    }
+
+    button {
+      margin: 1rem auto 0;
+    }
+  }
+}
